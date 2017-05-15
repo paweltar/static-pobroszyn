@@ -1,1 +1,7 @@
-<script src="{{root}}js/main.js"></script>
+<script src="{{root}}js/indexEntry.js"></script>
+{{#ifpage 'index' 'kontakt'}}
+  <script src="{{root}}js/mapEntry.js"></script>
+{{/ifpage}}
+{{#ifpage 'index'}}
+  <script src="{{root}}js/sliderEntry.js"></script>
+{{/ifpage}}

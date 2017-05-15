@@ -1,8 +1,12 @@
 module.exports = {
-    entry: './src/js/app.js',
+    entry: {
+        'indexEntry': './src/js/app.js',
+        'mapEntry': './src/js/map.js',
+        'sliderEntry': './src/js/slider.js'
+    },
     output: {
         path: __dirname,
-        filename: 'main.js'
+        filename: '[name].js'
     },
     module: {
         loaders: [

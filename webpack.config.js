@@ -18,9 +18,32 @@ module.exports = {
                 test: /\.css/,
                 loaders: ["style-loader", "css-loader"]
             }, {
-                test: /\.(jpe?g|png|gif|svg)$/i,
-                loaders: ['file-loader?hash=sha512&digest=hex&name=[hash].[ext]', 'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false']
+                test: /\.(gif|png|jpe?g|svg)$/i,
+                loaders: [
+                    'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+                    'image-webpack-loader'
+                ]
             }
         ]
+    },
+    
+    imageWebpackLoader: {
+    mozjpeg: {
+      quality: 65
+    },
+    pngquant:{
+      quality: "65-90",
+      speed: 4
+    },
+    svgo:{
+      plugins: [
+        {
+          removeViewBox: false
+        },
+        {
+          removeEmptyAttrs: false
+        }
+      ]
     }
+  }
 }

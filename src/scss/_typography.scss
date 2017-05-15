@@ -1,6 +1,45 @@
 @import url('//brick.a.ssl.fastly.net/Vollkorn:400,700,400i');
-$accent-font: 'Vollkorn', serif;
+
 
 .uk-dropcap::first-letter {
   color: $royal-red;
+}
+
+$accent-font: 'Vollkorn', serif;
+$font-secondary: "Helvetica", "Arial", sans-serif;
+$font-mono: "Consolas", monospace;
+$font-print-primary: "Georgia", "Times New Roman", "Times", serif;
+$font-print-secondary: "Georgia", "Times New Roman", "Times", serif;
+$global-font-family: $accent-font, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+
+html {
+  font-family: $global-font-family !important;
+}
+
+h1,
+.uk-h1,
+h2,
+.uk-h2,
+h3,
+.uk-h3,
+h4,
+.uk-h4,
+h5,
+.uk-h5,
+h6,
+.uk-h6 {
+  margin: 0 0 20px 0;
+  font-family: $global-font-family !important;
+  font-weight: normal;
+  color: #333;
+  text-transform: none;
+}
+
+blockquote {
+  font-family: -apple-system, $accent-font;
+  margin: 0 0 20px 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-style: italic;
+  color: #333;
 }

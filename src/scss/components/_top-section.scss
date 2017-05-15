@@ -1,0 +1,16 @@
+.top-section {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.5)
+    ),url(/assets/images/bg4.jpg);
+    h1, h2, p {
+      color: #fff;
+    }
+}
+
+.top-section__card {
+  overflow: hidden;
+  p {
+    color: #666;
+  }
+}

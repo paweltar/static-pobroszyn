@@ -1,0 +1,6 @@
+@import url('//brick.a.ssl.fastly.net/Vollkorn:400,700,400i');
+$accent-font: 'Vollkorn', serif;
+
+.uk-dropcap::first-letter {
+  color: $royal-red;
+}

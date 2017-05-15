@@ -1,1 +1,19 @@
 @import "settings";
+@import 'colors';
+@import 'global';
+@import 'typography';
+
+@import 'components/top-section';
+@import 'components/map-card';
+@import 'components/homepage-blocks/blocks-global';
+@import 'components/homepage-blocks/documents';
+@import 'components/navbar';
+@import 'components/homepage-blocks/gallery.scss';
+@import 'components/homepage-blocks/history';
+@import 'components/homepage-blocks/about';
+@import 'components/footer';
+@import 'components/faq';
+@import 'components/about';
+@import 'components/memories';
+@import 'components/gallery';
+@import 'components/contact';

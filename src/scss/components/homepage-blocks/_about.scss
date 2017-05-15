@@ -1,0 +1,9 @@
+.uk-card-default.block--about {
+  background: linear-gradient( $card-about, darken($card-about, 10%) );
+  h3 {
+    color: #fff;
+  }
+  &:hover {
+    background: linear-gradient( $card-about, darken($card-about, 0%) );
+  }
+}

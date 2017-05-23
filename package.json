@@ -14,7 +14,7 @@
     "concise-ui": "^0.2.1",
     "concise-utils": "^1.0.0",
     "jquery": "^3.2.1",
-    "uikit": "^3.0.0-beta.22"
+    "uikit": "^3.0.0-beta.24"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",

@@ -1,5 +1,18 @@
-<div class="homepage__block block--documents uk-card uk-background-cover uk-card-default uk-card-body uk-card-hover">
-  <div class="uk-overlay uk-overlay-default uk-position-bottom">
-    <p>Pobierz przydatne wzory dokumentów.</p>
-  </div>
+<div class="homepage__block block--documents uk-card uk-background-cover uk-card-default uk-card-body uk-card-hover" uk-toggle="target: #modal-docs">
+    <div class="uk-overlay uk-overlay-default uk-position-bottom">
+        <p>Potrzebne dokumenty.</p>
+    </div>
+</div>
+
+<div id="modal-docs" uk-modal="center: true">
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">Z jakimi dokumentami się zgłosić?</h2>
+
+        <ul class="uk-list uk-list-bullet">
+            <li>Dokument tożsamości (dowód, legitimacja).</li>
+            <li>Jeśli koszty pobytu mają być refundowane konieczne jest jeszcze skierowanie do schroniska z Ośrodka Pomocy Społecznej.</li>
+            <li>Informacja o miejscu ostatniego stałego zameldowania.</li>
+        </ul>
+    </div>
 </div>

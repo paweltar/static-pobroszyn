@@ -2,7 +2,8 @@ module.exports = {
     entry: {
         'indexEntry': './src/js/app.js',
         'mapEntry': './src/js/map.js',
-        'sliderEntry': './src/js/slider.js'
+        'sliderEntry': './src/js/slider.js',
+        'contactEntry': './src/js/contact-form.js'
     },
     output: {
         path: __dirname,
@@ -26,7 +27,7 @@ module.exports = {
             }
         ]
     },
-    
+
     imageWebpackLoader: {
     mozjpeg: {
       quality: 65

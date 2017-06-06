@@ -17,6 +17,7 @@
     "uikit": "^3.0.0-beta.24"
   },
   "devDependencies": {
+    "animate.css": "^3.5.2",
     "autoprefixer": "^6.7.7",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",

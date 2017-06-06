@@ -27,17 +27,49 @@
         </ul>
       </div>
       <div class="uk-width-1-2@m">
-        <form>
-          <fieldset class="uk-fieldset">
+        <form id="contact-form">
+          <fieldset class="uk-fieldset uk-position-relative uk-dark">
             <legend class="uk-legend">Formularz kontaktowy</legend>
             <div class="uk-margin">
-              <input class="uk-input uk-width-1-1" type="text" placeholder="Twój email">
+              <input class="uk-input uk-width-1-1" type="email" placeholder="Twój email" name="_replyto" required />
             </div>
             <div class="uk-margin">
-              <textarea class="uk-textarea uk-width-1-1" rows="5" placeholder="Twoja wiadomość"></textarea>
+              <textarea class="uk-textarea uk-width-1-1" rows="5" placeholder="Twoja wiadomość" name="message" required></textarea>
             </div>
+            <input type="hidden" name="_subject" value="Nowa wiadomość ze strony www.schronisko-pobroszyn.pl!" />
+            <input type="text" name="_gotcha" style="display:none" />
             <div class="uk-margin">
               <input class="uk-button uk-button-default uk-width-1-1" type="submit" value="Wyślij">
+            </div>
+            
+            <!-- sending overlay -->
+            <div class="uk-overlay-primary uk-position-cover form-overlay--sending">
+                <div class="uk-position-center">
+                  <div class="uk-text-center">
+                    <span class="uk-animation-slide-top-small" uk-icon="icon: mail; ratio: 3"></span>
+                    <h4 class="uk-animation-slide-bottom-small">Trwa wysyłanie wiadomości</h4>
+                  </div>
+                </div>
+            </div>
+
+            <!-- success overlay -->
+            <div class="uk-overlay-primary uk-position-cover form-overlay--success">
+                <div class="uk-position-center">
+                  <div class="uk-text-center">
+                    <span class="uk-animation-slide-top-small" uk-icon="icon: check; ratio: 3" style="color: #4F8A10;"></span>
+                    <h4 class="uk-animation-slide-bottom-small">Wiadomość została wysłana.</h4>
+                  </div>
+                </div>
+            </div>
+
+            <!-- error overlay -->
+            <div class="uk-overlay-primary uk-position-cover form-overlay--error">
+                <div class="uk-position-center">
+                  <div class="uk-text-center">
+                    <span class="uk-animation-slide-top-small" uk-icon="icon: close; ratio: 3" style="color: red;"></span>
+                    <h4 class="uk-animation-slide-bottom-small">Niestety, nie udało się wysłać wiadomości. Sprawdź, czy wpisany email jest poprawny i spróbuj jeszcze raz lub skontaktuj się z nami telefonicznie. </h4>
+                  </div>
+                </div>
             </div>
           </fieldset>
         </form>

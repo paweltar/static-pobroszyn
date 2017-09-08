@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel-loader": "^7.1.1",
+    "babel-loader": "^6.2.5",
     "concise-ui": "^0.2.1",
     "concise-utils": "^1.0.0",
     "jquery": "^3.2.1",
